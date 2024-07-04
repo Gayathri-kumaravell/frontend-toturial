@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Odd or Even Number Checker</h1>
+    <input type="text"id="odd1" onkeyup="checknumber()">
+    <p id="rmsg"></p>
+    <script>
+        function checknumber(){
+            num1=Number(document.getElementById('odd1').value);
+            result="";
+            num2=document.getElementById('rmsg').innerHTML=result;
+            if(num1 %2==0){
+            result="even number"
+            }else{
+            result="odd number"
+            }
+            document.getElementById('rmsg').innerHTML=result;
+            
+            
+        }
+    </script>
+</body>
+</html>

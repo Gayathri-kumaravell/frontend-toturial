@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task one</title>
+</head>
+<body>
+    <h1>comparition</h1>
+    <input type="text " id="com1" onkeyup="comparition()"><br> <br>
+
+    <input type="text " id="com2" onkeyup="comparition()">
+    <h3 id="clmsg"></h3>
+    <script>
+        function comparition(){
+           let num1=Number(document.getElementById('com1').value);
+           let num2=Number(document.getElementById('com2').value);
+           let result="";
+           let num3=document.getElementById('clmsg').innerHTML=result;
+           
+           if(num1>num2){
+            result=num+"gretherthen"+num2
+           }else{
+            result=num2+"lesthen"+num1
+           }
+           
+           document.getElementById('clmsg').innerHTML=result;q
+            
+
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Positive or Negative Number Checker</h1>
+    <input type="text" id="inmputnum" onkeyup="add()">
+    <p id="msg"></p>
+    <script>
+        function add(){
+         var num = Number(document.getElementById("inmputnum").value);
+         var num1=document.getElementById("msg");
+         var out2="";
+         msg.innerHTML=out2
+
+         if(num > 0){
+            out2="pasitive value"
+         }else if(num < 0){
+            out2="nagative value"
+         }
+         out.innerHTML=out2;
+        }
+
+
+    </script>
+</body>
+</html>

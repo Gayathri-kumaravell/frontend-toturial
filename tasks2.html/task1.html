@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Digit Sum</title>
+</head>
+<body>
+  <h2>Digit Sum to Single Digit</h2>
+  <input type="number" id="numberInput" placeholder="Enter a two-digit number">
+  <button onclick="calculateSum()">Calculate</button>
+  <p id="result"></p>
+
+  <script>
+    function calculateSum() {
+      let number = document.getElementById("numberInput").value;
+      if (number.length !== 2) {
+        document.getElementById("result").innerText = "Please enter a two-digit number.";
+        return;
+      }
+
+      // Split the number into its individual digits
+      let digit1 = parseInt(number.charAt(0));
+      let digit2 = parseInt(number.charAt(1));
+      
+      // Add the digits together
+      let sum = digit1 + digit2;
+
+      // Reduce to a single digit if necessary
+      while (sum > 9) {
+        sum = sum.toString().split('').reduce((acc, digit) => acc + parseInt(digit), 0);
+      }
+
+      document.getElementById("result").innerText = "The single digit sum is: " + sum;
+    }
+  </script>
+</body>
+</html>

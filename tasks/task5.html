@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>marks</h1>
+    <input type="text" id="mark" onkeyup="marks()">
+    <p id="mrmsg"></p>
+    <script>
+        function marks(){
+            mar1=Number(document.getElementById('mark').value);
+            result="";
+            mar2=document.getElementById('mrmsg').innerHTML=result;
+
+            if(mar1>=90 & mar1<=100){
+                result="a grade"
+            }else if(mar1>=80 & mar1<90) {
+                result ="B grade"
+
+                
+            }else if(mar1>=70 & mar1<80) {
+                result =" c grage"
+            }else if(mar1>=60 & mar1<70){
+                resilt= "D garade"
+            }else if(mar1>=50 & mar1<60){
+                result="E garade"
+            }else{
+                result="F grade"
+            }
+        
+            document.getElementById('mrmsg').innerHTML=result;
+        }
+    </script>
+</body>
+</html>

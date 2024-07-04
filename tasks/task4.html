@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="dig1" onkeyup="checknumber()">
+    <h2 id="chmsg"></h2>
+    <script>
+        function checknumber(){
+            num1=Number(document.getElementById('dig1').value);
+            result="";
+            num2=document.getElementById('chmsg').innerHTML=result;
+            if(num1>=0 &num1<=9){
+                result="single digits"
+            }else if(num1>=10 &num1<=99){
+                result="double digits"
+            }else{
+                result="three digits"
+
+            } 
+            document.getElementById('chmsg').innerHTML=result;
+            
+        }
+    </script>
+</body>
+</html>
